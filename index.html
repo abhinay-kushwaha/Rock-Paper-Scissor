@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+  <div class="main">
+   <div class="mai">
+    <div class="in">Rock Paper Scissor Game 
+    </div>
+   </div>
+   <div id="ia">
+       <div class="inn" id="btn1"><button onclick="
+        generateComputerChoice();
+
+        let resultMsg;
+        if(computerChoice === 'Paper'){
+          resultMsg = 'User won.';
+        }else if(computerChoice === 'Rock'){
+          resultMsg = 'It is a tie';
+        } else if( computerChoice === 'Scissor'){
+          resultMsg = 'Computer has won';
+        }
+        alert( `You have choosen Rock.  Computer choice is ${computerChoice} and ${resultMsg}`);
+        ">Rock</button></div>
+
+       <div class="inn" id="btn2"><button onclick="
+        generateComputerChoice();
+        let resultMsg;
+        if(computerChoice === 'Paper'){
+          resultMsg = 'It is a tie.';
+        }else if(computerChoice === 'Rock'){
+          resultMsg = 'Computer has won';
+        } else if( computerChoice === 'Scissor'){
+          resultMsg = 'user won';
+        }
+        alert( `You have choosen Paper.  Computer choice is ${computerChoice} and ${resultMsg}`);
+        ">Paper</button></div>
+
+       <div class="inn" id="btn3"><button onclick="
+        
+        let resultMsg;
+        if(computerChoice === 'Paper'){
+          resultMsg = 'Computer has won.';
+        }else if(computerChoice === 'Rock'){
+          resultMsg = 'User won';
+        } else if( computerChoice === 'Scissor'){
+          resultMsg = 'It is a tie';
+        }
+        alert( `You have choosen Scissor.  Computer choice is ${computerChoice} and ${resultMsg}`);
+        ">Scissor</button></div>
+   </div>
+   
+  </div>
+  <script>
+     let computerChoice;
+
+     function generateComputerChoice(){
+      let randomNumber = Math.random()*3;
+        if (randomNumber > 0 && randomNumber <= 1) {
+           computerChoice = 'Rock';
+        } else if (randomNumber > 1 && randomNumber <=2){
+           computerChoice = 'Paper';
+        } else {
+           computerChoice = 'Scissor';
+        }
+     }
+  </script>
+</body>
+</html>
