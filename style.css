@@ -1,0 +1,45 @@
+body{
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230705/pngtree-3d-illustration-of-a-tablet-wielding-college-student-taking-flight-image_3747290.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 100%;
+  font-weight: 900;
+}
+.main {
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.mai{
+  width: auto;
+  display: flex;
+  justify-content: center;
+
+}
+.in{
+  padding: 3%;
+  border-radius: 50px;
+  margin-top: 3%;
+  width: fit-content;
+  justify-content: center;
+  border: 3px solid rgb(104, 72, 156);
+  text-align: center;
+  font-size: 200%;
+}
+#ia{
+  margin: 5% 0% 5% 0% ;
+  display: flex;
+}
+.inn{
+  margin: 10%;
+  width: 10%;
+}
+button{
+  border-radius: 50px ;
+  padding: 20px;
+  width: 200%;
+  font-size: large;
+  font-weight: 900;
+  background: transparent;
+  border: 3px solid rgb(73, 36, 143);
+}
